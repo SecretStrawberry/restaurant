@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
+
+@import "../utils/variables.scss";
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(min-content, 1fr));
+  grid-template-rows: repeat(5, minmax(min-content, 1fr));
+  height: 100vh;
+  width: 100vw;
+
+  align-items: center;
+  justify-items: center;
+
+  background-image: url("../images/hero.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+
+  &_title {
+    grid-column: 2 / -1;
+    grid-row: 2 / 4;
+
+    width: 100%;
+
+    text-align: center;
+    color: $beige;
+
+    font-family: "Road Rage", cursive;
+
+    & > h1 {
+      position: relative;
+      font-size: 20rem;
+
+      letter-spacing: 2rem;
+      font-weight: 400;
+    }
+
+    & > p {
+      font-size: 10rem;
+    }
+  }
+}
+
+.header {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 8rem 16rem;
+
+  width: 100%;
+  height: 100%;
+}
+
+.side_nav {
+  position: relative;
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+
+  align-self: start;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 1rem 1rem;
+
+  background-color: rgba($beige, 0.5);
+}

@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600&display=swap");
+@import "../utils/variables.scss";
+
+.food {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(min-content, 1fr));
+  grid-template-rows: repeat(5, minmax(min-content, 1fr));
+  height: 100vh;
+  width: 100vw;
+
+  align-items: center;
+  justify-items: center;
+
+  font-family: "Overpass Mono", monospace;
+  background-color: $beige;
+
+  & > h1 {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+  }
+
+  &_menu {
+    display: flex;
+    justify-content: space-between;
+
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 5rem 10rem;
+  }
+
+  &_category {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    width: 32%;
+
+    padding: 15rem 3rem;
+
+    border-left: 30px solid #423f3e;
+    border-right: 30px solid #423f3e;
+    background-color: #171010;
+
+    overflow: hidden;
+
+    z-index: 989;
+
+    color: $beige;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -15%;
+      left: 0;
+      width: 100%;
+      height: 20%;
+      background-color: $beige;
+      border-bottom-left-radius: 30%;
+      border-bottom-right-radius: 30%;
+      z-index: 5;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -15%;
+      left: 0;
+      width: 100%;
+      height: 20%;
+      background-color: $beige;
+
+      border-top-left-radius: 30%;
+      border-top-right-radius: 30%;
+      z-index: 5;
+    }
+
+    & > h1 {
+      text-align: center;
+    }
+  }
+
+  &_courses {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 80%;
+
+    & > p {
+      margin-bottom: 1rem;
+      padding: 1rem 2rem;
+
+      font-size: 2rem;
+
+      background-color: $beige;
+      color: $maron;
+    }
+  }
+}

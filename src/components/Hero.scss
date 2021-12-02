@@ -14,12 +14,19 @@
 
   background-image: url("../images/hero.jpg");
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-attachment: fixed;
 
-  overflow: hidden;
+  & > p {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+    font-family: "Road Rage", cursive;
+    color: $beige;
+    font-size: 5rem;
+  }
 
   &_title {
-    grid-column: 2 / -1;
+    grid-column: 1 / -1;
     grid-row: 2 / 4;
 
     width: 100%;
@@ -58,16 +65,26 @@
 }
 
 .side_nav {
-  position: relative;
-  grid-column: 1 / 2;
-  grid-row: 1 / -1;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
 
   align-self: start;
 
-  width: 100%;
+  width: 15%;
   height: 100%;
 
   padding: 1rem 1rem;
 
-  background-color: rgba($beige, 0.5);
+  background-color: rgba($beige, 1);
+  z-index: 99;
+}
+
+.active {
+  display: contents;
+}
+
+.inactive {
+  display: none;
 }

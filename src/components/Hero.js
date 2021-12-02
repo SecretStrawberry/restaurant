@@ -1,4 +1,5 @@
 import React from "react";
+
 import Navigation from "./Navigation";
 
 import "./Hero.scss";
@@ -12,8 +13,9 @@ function Hero() {
       </div>
       <div className="hero_title">
         <h1>Smoking House</h1>
-        <p>Welcome home</p>
+        <p>Welcome to our home</p>
       </div>
+      <p>Here we are all one family</p>
     </div>
   );
 }

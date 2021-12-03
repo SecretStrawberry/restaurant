@@ -1,13 +1,13 @@
 import "./App.scss";
 
 import Home from "./pages/Home";
-import Food from "./components/Food";
+import Menu from "./pages/Menu";
 
 function App() {
   return (
     <div className="App">
       <Home />
-      <Food />
+      <Menu />
     </div>
   );
 }

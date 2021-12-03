@@ -7,15 +7,15 @@ import "./Hero.scss";
 function Hero() {
   return (
     <div className="hero">
-      <header className="header"></header>
-      <div className="side_nav">
+      <header className="header">
         <Navigation />
-      </div>
+      </header>
+
       <div className="hero_title">
         <h1>Smoking House</h1>
-        <p>Welcome to our home</p>
+        {/* <p>Welcome to our home</p> */}
       </div>
-      <p>Here we are all one family</p>
+      <p>Authentic Tennessee BBQ smoked meats</p>
     </div>
   );
 }

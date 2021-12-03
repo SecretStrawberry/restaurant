@@ -13,9 +13,10 @@ function Hero() {
 
       <div className="hero_title">
         <h1>Smoking House</h1>
-        {/* <p>Welcome to our home</p> */}
+        <p>Authentic Tennessee BBQ smoked meats</p>
       </div>
-      <p>Authentic Tennessee BBQ smoked meats</p>
+
+      <button className="btn">Book a dinner</button>
     </div>
   );
 }

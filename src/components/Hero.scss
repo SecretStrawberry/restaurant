@@ -45,7 +45,8 @@
     }
 
     & > p {
-      font-size: 10rem;
+      font-size: 5rem;
+      letter-spacing: 2px;
     }
   }
 }
@@ -61,10 +62,17 @@
   width: 100%;
 }
 
-.active {
-  display: contents;
-}
+.btn {
+  grid-column: 4 / 6;
 
-.inactive {
-  display: none;
+  padding: 1rem 2rem;
+
+  font-size: 2rem;
+  color: $beige;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  box-shadow: none;
+
+  border: 1px solid $beige;
 }

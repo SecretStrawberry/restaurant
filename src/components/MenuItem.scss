@@ -12,9 +12,12 @@
 
   color: $maron;
 
+  z-index: 1000;
+
   &:hover {
     .food_courses-content_image {
       opacity: 1;
+      visibility: visible;
       transform: translateX(50rem);
     }
     .food_courses-content p {
@@ -36,7 +39,8 @@
       position: absolute;
       transition: all 0.3s;
       opacity: 0;
-      transform: translateX(70rem);
+      visibility: hidden;
+      transform: translateX(100rem);
 
       &:hover {
         & > img {

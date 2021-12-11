@@ -4,7 +4,7 @@ import "./MenuItem.scss";
 
 function MenuItem(props) {
   return (
-    <div className="food_courses">
+    <div className={`food_courses ${props.props_className}`}>
       <div className="food_courses-content">
         <div className="food_text">
           <h3>

@@ -4,7 +4,7 @@
 .menu {
   position: relative;
   padding-top: 10rem;
-  padding-bottom: 10rem;
+
   background-color: $beige;
   overflow: hidden;
 
@@ -18,55 +18,63 @@
     background-image: url("../images/smoke.png");
     background-position: center;
     background-size: cover;
-    filter: blur(8px) grayscale(100%);
+    filter: blur(10px);
   }
 
   &_container {
     position: relative;
-    top: 1.5%;
-    left: 1.5%;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: transparent;
     z-index: 1000;
-
-    & > h1 {
-      margin-bottom: 2rem;
-
-      text-align: center;
-      font-family: "Road Rage", cursive;
-      font-size: 5rem;
-      letter-spacing: 4px;
-      font-weight: 200;
-      color: $maron;
-    }
   }
 }
 
-// .lines {
-//   &::after {
-//     position: absolute;
-//     content: "";
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
+.sandwich {
+  position: relative;
+  z-index: 1000;
 
-//     border-left: 1px solid $maron;
-//     // border-right: 1px solid $maron;
-//     transform: skew(-45deg);
-//   }
+  padding: 8rem 2rem;
 
-//   &::before {
-//     position: absolute;
-//     content: "";
-//     top: 0;
-//     right: 0;
-//     width: 100%;
-//     height: 100%;
+  background-color: #252525;
 
-//     // border-left: 1px solid $maron;
-//     border-right: 1px solid $maron;
-//     transform: skew(-45deg);
-//   }
-// }
+  & > h1 {
+    color: $beige;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/white_smoke.png");
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    opacity: 0.5;
+
+    z-index: 800;
+  }
+}
+
+.menu_title {
+  margin-bottom: 2rem;
+
+  text-align: center;
+  font-family: "Road Rage", cursive;
+  font-size: 5rem;
+  letter-spacing: 4px;
+  font-weight: 200;
+  color: $maron;
+}
+
+.Menu_class {
+  position: relative;
+  color: $beige;
+
+  z-index: 999;
+}

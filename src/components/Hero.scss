@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@300;400&display=swap");
 
 @import "../utils/variables.scss";
 
@@ -65,14 +66,68 @@
 .btn {
   grid-column: 4 / 6;
 
-  padding: 1rem 2rem;
+  position: relative;
 
-  font-size: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+
+  font-family: "Gluten", cursive;
+  font-size: 3rem;
   color: $beige;
   text-transform: uppercase;
 
   background-color: transparent;
   box-shadow: none;
 
-  border: 1px solid $beige;
+  transition: all 0.5s;
+
+  z-index: 100;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+
+    border: 1px solid $beige;
+    border-left: 0;
+    border-right: 0;
+
+    transition: inherit;
+
+    z-index: -1;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+
+    background-color: $beige;
+
+    transition: inherit;
+
+    z-index: -1;
+  }
+
+  &:hover {
+    transition-delay: 0.5s;
+    color: $maron;
+  }
+
+  &:hover {
+    &::before {
+      transition-delay: 0s;
+      width: 100%;
+    }
+    &::after {
+      transition-delay: 0.35s;
+      width: 100%;
+    }
+  }
 }

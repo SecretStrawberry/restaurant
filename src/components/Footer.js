@@ -2,6 +2,12 @@ import React from "react";
 
 import "./Footer.scss";
 
+import {
+  IoLogoInstagram,
+  IoLogoTwitter,
+  IoLogoFacebook,
+} from "react-icons/io5";
+
 function Footer() {
   return (
     <footer>
@@ -22,9 +28,15 @@ function Footer() {
         <div className="footer_socialLinks">
           <h5>Follow us</h5>
           <ul>
-            <li>Twitter</li>
-            <li>Instagram</li>
-            <li>Facebook</li>
+            <li className="twitter">
+              <IoLogoTwitter />
+            </li>
+            <li className="instagram">
+              <IoLogoInstagram />
+            </li>
+            <li className="facebook">
+              <IoLogoFacebook />
+            </li>
           </ul>
         </div>
       </div>

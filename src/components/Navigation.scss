@@ -28,6 +28,11 @@
   font-family: "Gluten", cursive;
 
   z-index: 9900;
+
+  @media only screen and (max-width: 1068px) {
+    display: none;
+  }
+
   & > ul {
     display: flex;
 
@@ -42,6 +47,15 @@
 
     color: $beige;
     font-size: 2rem;
+    @media only screen and (max-width: 1561px) {
+      width: 40%;
+    }
+    @media only screen and (max-width: 1191px) {
+      width: 45%;
+    }
+    @media only screen and (max-width: 1068px) {
+      width: 50%;
+    }
 
     & > li {
       position: relative;

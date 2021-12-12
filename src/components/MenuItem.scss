@@ -13,6 +13,18 @@
   color: $maron;
 
   z-index: 1000;
+  @media only screen and (max-width: 1694px) {
+    width: 50%;
+  }
+  @media only screen and (max-width: 1460px) {
+    width: 55%;
+  }
+  @media only screen and (max-width: 1320px) {
+    width: 60%;
+  }
+  @media only screen and (max-width: 1164px) {
+    width: 70%;
+  }
 
   &:hover {
     .food_courses-content_image {
@@ -45,12 +57,27 @@
       &:hover {
         & > img {
           width: 100%;
+          @media only screen and (max-width: 1460px) {
+            width: 80%;
+          }
+          @media only screen and (max-width: 1320px) {
+            width: 70%;
+          }
+          @media only screen and (max-width: 1164px) {
+            width: 60%;
+          }
         }
       }
 
       & > img {
         width: 70%;
         transition: all 0.3s;
+        @media only screen and (max-width: 1320px) {
+          width: 60%;
+        }
+        @media only screen and (max-width: 1164px) {
+          width: 50%;
+        }
       }
     }
   }

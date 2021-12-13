@@ -1,13 +1,14 @@
 import React from "react";
-
 import Navigation from "./Navigation";
 
+import { IoMenu } from "react-icons/io5";
 import "./Hero.scss";
 
 function Hero() {
   return (
     <div className="hero">
       <header className="header">
+        <IoMenu className="nav_icon" />
         <Navigation />
       </header>
 
